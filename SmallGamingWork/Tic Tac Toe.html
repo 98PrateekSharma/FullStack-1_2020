@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Tic Tac Toe</title>
+ <link rel="stylesheet" href="bootstrap.css">
+ <style>
+  .horrizontal{
+   border-bottom: 1px solid black;
+   border-top: 1px solid black;
+  }
+  .vertical{
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+  }
+
+  table{
+   background-color: cornsilk;
+   margin: 0 auto 0 auto;
+  }
+
+  td{
+   width: 150px;
+   height: 150px;
+  }
+  td:hover{
+   background-color: rgb(146, 143, 143);
+  }
+
+  h1{
+   border: 1px solid white;
+   width: 30%;
+   text-align: center;
+   background-color: yellowgreen;
+   margin: auto;
+   margin-bottom: 40px;
+   margin-top: 20px;
+  }
+
+  body{
+   background-color: blueviolet;
+  }
+  
+
+  </style>
+</head>
+<body>
+
+ <h1>Tic Tac Toe</h1>
+
+<div class="container">
+
+  <table>
+   <tr>
+    <td></td>
+    <td class="vertical"></td>
+    <td></td>
+   </tr>
+
+   <tr>
+    <td class="horrizontal"></td>
+    <td class="vertical horrizontal"></td>
+    <td class="horrizontal"></td>
+   </tr>
+
+   <tr>
+    <td></td>
+    <td class="vertical"></td>
+    <td></td>
+   </tr> 
+  </table>
+  
+  <div class="btn-group">
+   <button type="button" class="btn btn-default btn-warning btn-lg">Home</button>
+  </div>
+</div>
+
+</body>
+</html>
