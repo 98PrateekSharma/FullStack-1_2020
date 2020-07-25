@@ -1,0 +1,10 @@
+body{
+ background-color: lightgrey;
+}
+p{
+ background-color: grey;
+ color: white;
+ text-align: justify;
+ padding-left: 20px;
+ padding-right: 20px;
+}
