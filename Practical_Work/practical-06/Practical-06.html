@@ -5,18 +5,80 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Practical-06</title>
  <style>
-  h1{
+  h1
+  {
    color: white;
   }
-  body{
+  body
+  {
+   /* min-width: 460px;  at the place of overflow */
    background-color: lightgray;
   }
+  div .img
+  {
+   width: 99%;
+   height:120px;
+   border-radius: 8px;
+  }
+  .box
+  {
+   float: left;
+   border-radius: 8px;
+   padding: 1% 1%;
+   width: 20%;
+   height:auto;
+   margin: 2% 1.5%;
+   background-color: white;
+   overflow: auto;
+  }
+  /* doubt : why left and right are of 1.5% margin rather than 2% as i have set div width 0f 20% * 4 = 80%
+  
+  second doubt is that in box i have given 1% padding but in button and img css i have to set the width at 99% rather than at 98% */
+  .button
+  {
+   text-decoration: none;
+   color: white;
+   display: block;
+   width: 99%;
+   padding: 5% 0%;
+   text-align: center;
+
+   background-color: blueviolet;
+   border-radius: 8px;
+  }
+ 
  </style>
 </head>
 <body>
  <h1>PRACTICAL-06: CREATE FOLLOWING LAYOUT USING CSS LAYOUT PROPERTIES.</h1>
  <div>
-  
+  <div class="box">
+   <img src="../img/P06html.png" alt="Introduction to HTML" class="img">
+   <p style="text-align: center"><strong>Introduction To HTML</strong></p>
+   <p style="text-align: justify;line-height: 1.5;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores commodi assumenda amet nostrum nam consequatur quasi aliquam corporis vel.</p>
+   <a href="../practical-05/HTML.html" class="button">Read More</a>
+  </div>
+ 
+  <div class="box">
+   <img src="../img/P06CSS.png" alt="Introduction to CSS3" class="img">
+   <p style="text-align: center"><strong>Introduction To CSS</strong></p>
+   <p style="text-align: justify;line-height: 1.5;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores commodi assumenda amet nostrum nam consequatur quasi aliquam corporis vel.</p>
+   <a href="../practical-05/CSS.html" class="button">Read More</a>
+  </div>
+ 
+  <div class="box">
+   <img src="../img/P06jquery.png" alt="Introduction to Javascript" class="img">
+   <p style="text-align: center"><strong>Introduction To Javascript</strong></p>
+   <p style="text-align: justify;line-height: 1.5;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores commodi assumenda amet nostrum nam consequatur quasi aliquam corporis vel.</p>
+   <a href="../practical-05/Javascript.html" class="button">Read More</a>
+  </div>
+ 
+  <div class="box">
+   <img src="../img/P06Bootstrap.jpg" alt="Introduction to Bootstrap" class="img">
+   <p style="text-align: center"><strong>Introduction To Bootstrap</strong></p>
+   <p style="text-align: justify;line-height: 1.5;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores commodi assumenda amet nostrum nam consequatur quasi aliquam corporis vel.</p>
+   <a href="../practical-05/Bootstrap.html" class="button">Read More</a>
+  </div>
  </div>
 </body>
 </html>
