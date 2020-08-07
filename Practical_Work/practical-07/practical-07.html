@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+  *
+  {
+   margin: 0;
+   padding: 0;
+  }
+  #container
+  {
+   border: lightgrey 5px solid;
+   margin: 20px auto;
+   padding: 10px;
+   width: 1200px;
+   height: auto;
+  }
+  #header
+  {
+   background-color: grey;
+   width: 100%;
+   height: 70px;
+   color: white;
+   font-size: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 10px;
+  }
+  #banner
+  {
+   background-color: skyblue;
+   width: 100%;
+   height: 450px;
+   color: white;
+   font-size: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 10px;
+  }
+  .section
+  {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 10px;
+   font-size: 40px;
+  }
+  #cirlces_conatiner
+  {
+   /* background-color: violet; */
+   /* height: 280px; */
+   height: auto;
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-bottom: 10px;
+  }
+  .circle
+  {
+   width: 260px;
+   height: 260px;
+   border-radius: 50%;   
+   background: goldenrod;
+   float: left;
+  }
+  #content
+  {
+   width: 100%;
+   height: 554px;
+   margin-bottom: 10px;
+   /* border: 2px solid red; */
+  }
+  #left-sidebar
+  {
+   width: 590px;
+   height: 554px;
+   margin-right: 10px;
+   background-color: grey;
+   float: left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 40px;
+   color: white;
+  }
+  #right-sidebar
+  {
+   width: 600px;
+   height: 554px;
+   /* margin-right: 10px; */
+   float: right;
+  }
+  .article
+  {
+   height: 178px;
+   width: 100%;
+   background-color: rgb(241, 108, 67);
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 40px;
+   color: white;
+  }
+  .cards
+  {
+   width: 260px;
+   height: 280px;
+   background-color: orangered;
+  }
+  #footer
+  {
+   background-color: grey;
+   width: 100%;
+   height: 70px;
+   color: white;
+   font-size: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  #cards_conatiner
+  {
+   /* height: 280px; */
+   height: auto;
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   /* align-items: center; */
+   margin-bottom: 10px;
+  }
+
+ </style>
+</head>
+<body>
+ <div id="container">
+  <div id="header">Header</div>
+  <div id="banner">Banner</div>
+  <div class="section"><b>Section-1</b></div>
+  <div id="cirlces_conatiner">
+   <div class="circle"></div>
+   <div class="circle"></div>
+   <div class="circle"></div>
+   <div class="circle"></div>
+  </div>
+  <div class="section"><b>Section-2</b></div>
+  <div id="content">
+   <div id="left-sidebar">Main content</div>
+   <div id="right-sidebar">
+    <div class="article">Artical-1</div>
+    <div class="article">Artical-2</div>
+    <div class="article">Artical-3</div>
+   </div>
+  </div>
+  <div class="section">Section-3</div>
+  <div id="cards_conatiner">
+   <div class="cards"></div>
+   <div class="cards"></div>
+   <div class="cards"></div>
+   <div class="cards"></div>
+  </div>
+  <div class="section">Section-4</div>
+  <div id="footer">Footer</div>
+ </div>
+</body>
+</html>
