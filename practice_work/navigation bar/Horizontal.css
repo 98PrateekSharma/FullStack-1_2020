@@ -8,6 +8,8 @@ ul{
    margin: 0;
    overflow: hidden;
    background-color:blue;
+   position: fixed;
+   top: 0;
 }
 ul li
 {
