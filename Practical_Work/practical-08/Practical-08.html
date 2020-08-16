@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+  *
+  {
+   margin: 0;
+   padding: 0;
+  }
+  #container
+  {
+   margin-bottom: 20px;
+   margin-left: auto;
+   margin-right: auto;
+
+   padding: 10px;
+   padding-top: 0px;
+   width: 1300px;
+   height: auto;
+  }
+  .header
+  {
+   width: 100%;
+   height: 50px;
+   margin-bottom: 20px;
+  }
+  #banner
+  {
+   background-image: url(../img/banner_practical-08.jpg);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   width: 100%;
+   height: 550px;
+   color: white;
+   font-size: 40px;
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+   margin-bottom: 10px;
+  }
+  
+  .section
+  {
+   display: flex;
+   justify-content: center;
+   align-items: baseline;
+   margin-bottom: 10px;
+   margin-top: 150px;
+   font-size: 40px;
+  }
+  #cirlces_conatiner
+  {
+   /* background-color: violet; */
+   /* height: 280px; */
+   height: auto;
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-bottom: 10px;
+  }
+  .circle
+  {
+   width: 260px;
+   height: 260px;
+   border-radius: 50%;   
+   background: goldenrod;
+   float: left;
+  }
+  #content
+  {
+   width: 100%;
+   height: 554px;
+   margin-bottom: 10px;
+   /* border: 2px solid red; */
+  }
+  #left-sidebar
+  {
+   width: 590px;
+   height: 540px;
+   margin-right: 10px;
+   background-color: grey;
+   float: left;
+   padding: 5px 10px 10px 10px;
+   /* justify-content: center; */
+   font-size: 17px;
+   color: white;
+  }
+  #right-sidebar
+  {
+   width: 600px;
+   height: 554px;
+   /* margin-right: 10px; */
+   float: right;
+  }
+  .article
+  {
+   height: 178px;
+   width: 100%;
+   background-color: rgb(241, 108, 67);
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: center;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   font-size: 20px;
+   color: black;
+  }
+  /* .cards
+  {
+   width: 260px;
+   height: 280px;
+   background-color: orangered;
+  } */
+  #footer
+  {
+   background-color: grey;
+   width: 100%;
+   height: 85px;
+   padding: 15px;
+  }
+  .cards_conatiner
+  {
+   /* height: 280px; */
+   height: auto;
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   /* align-items: center; */
+   margin-bottom: 10px;
+  }
+
+  div.header ul li {
+     display: inline-block;
+  }
+  div.header ul li a{
+   display: block;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+   font-weight: bold;
+   font-size: 22px;
+   padding: 8px 40px;
+  }
+  div.header ul li a:hover{
+     background-color: white;
+     color: black;
+  }
+  div.header ul{
+      list-style: none;
+      margin: 0;
+      overflow: hidden;
+      width: 100%;
+      background-color: grey;
+      padding: 10px 0px;
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+  }
+
+  div .img
+  {
+   width: 100%;
+   height:140px;
+  }
+  .box
+  {
+   float: left;
+   width: 260px;
+   height:auto;
+   margin: 2% 1.5%;
+   background-color: grey;
+   overflow: auto;
+  }
+  /* doubt : why left and right are of 1.5% margin rather than 2% as i have set div width 0f 20% * 4 = 80%
+  
+  second doubt is that in box i have given 1% padding but in button and img css i have to set the width at 99% rather than at 98% */
+  .button
+  {
+   text-decoration: none;
+   color: white;
+   display: block;
+   width: 100%;
+   padding: 3% 0%;
+   text-align: center;
+
+   background-color: blueviolet;
+   border-radius: 8px;
+  }
+  html {
+   scroll-behavior: smooth;
+  }
+ </style>
+</head>
+
+<body>
+ <div id="container">
+  <div class="header" id="top"><ul>
+     <li><a href="#">home</a></li>
+     <li><a href="#aboutus">about us</a></li>
+     <li><a href="#team">team</a></li>
+     <li><a href="#technologies">technologies</a></li>
+     <li><a href="#contact">contact</a></li>
+  </ul></div>
+  <div id="banner"><h3 style="padding-left: 15px;padding-top: 10px;">PRACTICAL-08</h3></div>
+  <div class="section" id="team"><b>Team Members</b></div>
+  <div id="cirlces_conatiner">
+   <div class="circle" style="background-image: url(../img/teamMember_3.png); background-repeat: no-repeat; background-size: 100% 100%;"></div>
+   <div class="circle" style="background-image: url(../img/teamMember_1.png); background-repeat: no-repeat; background-size: 100% 100%;"></div>
+   <div class="circle" style="background-image: url(../img/teamMember_4.png); background-repeat: no-repeat; background-size: 100% 100%;"></div>
+   <div class="circle" style="background-image: url(../img/teamMember_2.png); background-repeat: no-repeat; background-size: 100% 100%;"></div>
+  </div>
+  <div class="section" id="aboutus"><b>About Us</b></div>
+  <div id="content">
+   <div id="left-sidebar">
+      <h3 style="margin-bottom: 20px;">About Project</h3>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque ipsam accusantium dolores sunt officiis illum deleniti reiciendis quisquam cumque sit quibusdam, omnis, corrupti veniam itaque expedita, minima eius beatae cupiditate? Nemo similique quod, ipsa a sequi, amet voluptate quidem nam numquam vel asperiores ipsam rerum id aperiam velit pariatur commodi provident, impedit placeat eveniet eaque distinctio aspernatur culpa exercitationem. Quibusdam, distinctio minus voluptatum itaque laboriosam nam sit a fuga hic beatae temporibus voluptate error eaque animi dolor cumque modi velit? Rerum, nulla! Est, illum sunt repellendus expedita ut iste, velit, maiores illo error quidem minus corporis neque repudiandae ab? Nesciunt tenetur distinctio magni. Ea voluptas quaerat dolorem, accusantium voluptates aliquid, nostrum incidunt facilis accusamus laudantium voluptatem enim recusandae dolorum amet sint libero veritatis reprehenderit animi? Adipisci placeat laudantium, optio eum vel modi voluptatibus a nulla impedit officiis officia aut amet nemo sapiente sunt accusantium praesentium, earum consectetur dolor dolorum illo? Doloribus soluta quisquam eius! Nostrum nemo natus molestiae aliquam modi, fugit incidunt dicta vel, illo illum minus deserunt odio praesentium hic! Ipsa, omnis. Maxime cupiditate deleniti, cum sapiente, aliquid facilis ex hic, odio distinctio dolores corporis doloribus aliquam nisi perferendis excepturi quasi facere exercitationem ab ducimus sunt commodi totam unde dignissimos! In itaque id distinctio. Eligendi similique voluptate voluptatum ut est fugit? Ipsum inventore consequatur iusto temporibus est commodi, aperiam, dignissimos nesciunt maxime non, tempora ex nulla voluptate praesentium placeat vero repellendus quos fuga blanditiis soluta corrupti nam nihil? Quam, numquam, omnis ab mollitia praesentium quasi ad sapiente minima, iure quis facere illum voluptatum ipsa!</div>
+   <div id="right-sidebar">
+    <div class="article" style="background-image: url(../img/project_1_image.jpg);">Project-1</div>
+    <div class="article" style="background-image: url(../img/project_2_image.jpeg);">Project-2</div>
+    <div class="article" style="background-image: url(../img/project_3_image.jpg);">Project-3</div>
+   </div>
+  </div>
+  <div class="section" id="technologies">Technologies Used</div>
+  <div class="cards_conatiner">
+   <div class="box">
+      <img src="../img/P06html.png" alt="Introduction to HTML" class="img">
+      <p style="text-align: center; margin: 10px;"><strong>Introduction To HTML</strong></p>
+      <p style="text-align: justify;line-height: 1.5; color: white; padding: 0px 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores commodi assumenda amet nostrum nam consequatur quasi aliquam corporis vel.</p>
+      <a href="../practical-05/HTML.html" class="button">Read More</a>
+   </div>
+   <div class="box">
+      <img src="../img/P06CSS.png" alt="Introduction to CSS3" class="img">
+      <p style="text-align: center; margin: 10px;"><strong>Introduction To CSS</strong></p>
+      <p style="text-align: justify;line-height: 1.5; color: white; padding: 0px 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores commodi assumenda amet nostrum nam consequatur quasi aliquam corporis vel.</p>
+      <a href="../practical-05/HTML.html" class="button">Read More</a>
+   </div>
+   <div class="box">
+      <img src="../img/P06jquery.png" alt="Introduction to Javascript" class="img">
+      <p style="text-align: center; margin: 10px;"><strong>Introduction To Javascript</strong></p>
+      <p style="text-align: justify;line-height: 1.5; color: white; padding: 0px 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores commodi assumenda amet nostrum nam consequatur quasi aliquam corporis vel.</p>
+      <a href="../practical-05/HTML.html" class="button">Read More</a>
+   </div>
+   <div class="box">
+      <img src="../img/P06Bootstrap.jpg" alt="Introduction to Bootstrap" class="img">
+      <p style="text-align: center; margin: 10px;"><strong>Introduction To Bootstrap</strong></p>
+      <p style="text-align: justify;line-height: 1.5; color: white; padding: 0px 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores commodi assumenda amet nostrum nam consequatur quasi aliquam corporis vel.</p>
+      <a href="../practical-05/HTML.html" class="button">Read More</a>
+   </div>
+  </div>
+  <div class="section" id="contact">Contact</div>
+  <div id="footer">
+   <p style="padding-left: 230px;">
+      Copyright &copy; Prateek Sharma. All Rights Reserved and Contact Us:91+ 1900 900 900, github profile: 98prateeksharma
+   </p>
+   <h4  style="padding-left: 580px; margin-top: 45px;"><a href="#top">Back to Top</a></h4>
+  </div>
+ </div>
+</body>
+</html>
