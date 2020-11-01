@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      *{
+         padding: 0;
+         margin: 0;
+         box-sizing: 0;
+         background-color: darkgray;
+      }
+      h1{
+         margin-top: 10%;
+         text-align: center;
+         font-size: 48px;
+         color: white;
+      }
+      .btn
+      {
+         height: 40px;
+         width: 40px;
+         background-color: yellow;
+         box-sizing: 0;
+         text-align: center;
+         line-height: 40px;
+         font-size: 30px;
+         }
+         #counter
+         {
+            color: yellow;
+            font-size: 40px;
+            display: inline-block;
+            margin-left: 90px;
+            margin-right: 90px;
+         }
+         .center
+         {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 30px;
+         }
+   </style>
+</head>
+<body onload="document.getElementById('counter').innerHTML = '0';disabled();">
+   
+   <h1>COUNTER</h1>
+   <div class="center">
+   <button id="btn1"><div class="btn" onclick="minus()">&minus;</div>
+      </button>
+      <p id="counter"></p>
+      <button><div class="btn" onclick="plus()">&plus;</div></button>
+   </div>
+
+   <script>
+      
+      function plus(){
+         document.getElementById('btn1').disabled = false;
+         let counterValue = Number(document.getElementById('counter').textContent);
+         document.getElementById('counter').innerHTML = (counterValue+1).toString();
+      }
+      function minus(){
+         let counterValue = Number(document.getElementById('counter').textContent);
+         if(counterValue){
+            document.getElementById('counter').innerHTML = (counterValue-1).toString();
+            disabled();
+         }
+      }
+      function disabled(){
+         if(Number(document.getElementById('counter').textContent) == 0){
+            document.getElementById('btn1').setAttribute("disabled","disabled");
+         }
+      }
+   </script>
+   
+</body>
+</html>
